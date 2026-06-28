@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=./index" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baseline Intake Workspace — Redirect</title>
-  <style>body{background:#09090b;color:#e6e6e6;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;display:flex;align-items:center;justify-content:center;height:100vh}</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Baseline Intake Workspace</title>
+  <style>html,body,iframe{height:100%;margin:0}iframe{width:100%;border:0}</style>
 </head>
 <body>
-  <main style="max-width:680px;padding:24px;text-align:center">
-    <h1 style="font-size:20px;margin-bottom:8px">Baseline Intake Workspace</h1>
-    <p style="margin:0 0 12px">This repository's primary UI is served from a file named <code>index</code> (no extension). For static hosts that expect <code>index.html</code>, this repository now includes a simple redirect at <code>index.html</code> that forwards to <code>/index</code>.</p>
-    <p style="margin:0 0 16px">If you expect a full standalone <code>index.html</code>, I can also create a full copy. The original file has been archived as <code>index.bak</code> in the repository root.</p>
-    <p style="font-size:13px;color:#9ca3af;margin-top:10px">Automatically redirecting…</p>
-    <p style="margin-top:18px"><a href="./index" style="color:#7c3aed;text-decoration:underline">Open original UI (index)</a></p>
-  </main>
+  <!-- This wrapper loads the extensionless "index" file so static hosts that expect index.html can still serve the UI -->
+  <iframe src="./index" title="Baseline Intake Workspace"></iframe>
 </body>
 </html>
